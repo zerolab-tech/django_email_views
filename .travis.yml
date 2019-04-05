@@ -5,7 +5,10 @@ python:
 
 install:
   - 'pip install pipenv'
-  - 'pipenv install --system'
+  - 'pipenv install --system --bare'
+
+script:
+  - 'python runtests.py'
 
 deploy:
   provider: pypi
