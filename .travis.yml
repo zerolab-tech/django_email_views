@@ -1,3 +1,6 @@
+language: python
+cache: pip
+
 deploy:
   provider: pypi
   user: zerolab
