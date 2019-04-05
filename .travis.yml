@@ -3,12 +3,6 @@ cache: pip
 python:
   - '3.6'
 
-before_install:
-  # The default version of sqlite on travis doesn't support bulk inserts.
-  - sudo apt-add-repository -y ppa:travis-ci/sqlite3
-  - sudo apt-get -y update
-  - sudo apt-get -y install sqlite3=3.7.15.1-1~travis1
-
 install:
   - 'pip install pipenv'
   - 'pipenv --bare install --system'
