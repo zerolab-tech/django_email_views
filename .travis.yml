@@ -5,7 +5,7 @@ python:
 
 install:
   - 'pip install pipenv'
-  - 'pipenv install --system --bare'
+  - 'pipenv --bare install --system'
 
 script:
   - 'python runtests.py'
