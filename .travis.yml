@@ -14,7 +14,6 @@ install:
   - 'pipenv --bare install --system'
 
 script:
-  - 'python runtests.py'
 
 deploy:
   provider: pypi
