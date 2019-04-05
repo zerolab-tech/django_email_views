@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="django-email-views",
+    name="djangoemailviews",
     version="0.0.1",
     author="Anatoly Gusev",
     author_email="gt@zerolab.tech",
